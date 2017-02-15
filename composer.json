@@ -1,6 +1,6 @@
 {
     "name": "zibios/wrike-bundle",
-    "description": "Symfony 2|3 bundle for WrikeBundle package.",
+    "description": "Symfony bundle for WrikePhpLibrary package.",
     "keywords": ["symfony", "symfony2", "symfony3", "bundle", "wrike", "wrike.com", "api", "sdk", "library", "guzzle", "client", "REST", "HTTP", "php"],
     "type": "symfony-bundle",
     "license": "MIT",
