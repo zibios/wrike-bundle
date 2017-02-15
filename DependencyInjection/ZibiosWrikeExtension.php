@@ -10,6 +10,7 @@
 
 namespace Zibios\Bundle\WrikeBundle\DependencyInjection;
 
+use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
@@ -33,6 +34,7 @@ class ZibiosWrikeExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+        /** @var ConfigurationInterface $configuration */
         $configuration = $this->getConfiguration($configs, $container);
         $config = $this->processConfiguration($configuration, $configs);
         $config = (array) $config;

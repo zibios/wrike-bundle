@@ -1,6 +1,8 @@
 filter:
     paths:
         - '*'
+    excluded_paths:
+        - Tests/*
 checks:
     php:
         uppercase_constants: true
