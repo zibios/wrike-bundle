@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.org/schema/dic/zibios_wrike"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="config" type="zw:config" xmlns:zw="http://example.org/schema/dic/zibios_wrike"/>
+
+    <xs:complexType name="config">
+        <xs:sequence>
+            <xs:element type="zw:permanent-tokens" name="permanent-tokens" maxOccurs="1" minOccurs="0" xmlns:zw="http://example.org/schema/dic/zibios_wrike"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="api-url" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="permanent-tokens">
+        <xs:sequence>
+            <xs:element type="zw:token" name="token" maxOccurs="unbounded" minOccurs="0" xmlns:zw="http://example.org/schema/dic/zibios_wrike"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="default-token" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="token">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,23 @@
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        php:
+          mass_threshold: 100
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+    config:
+      file_extensions: "php"
+      rulesets: "codesize.xml"
+ratings:
+  paths:
+    - "**.php"
+exclude_paths:
+  - build/**/*
+  - Resources/**/*
+  - Tests/**/*
+  - vendor/**/*

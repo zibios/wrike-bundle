@@ -1,0 +1,9 @@
+imports:
+    - { resource: base.yml }
+
+zibios_wrike:
+    api_url: 'https://urlOverwritten'
+    permanent_tokens:
+        tokens:
+            third: thirdToken
+        default_token: third

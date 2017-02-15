@@ -1,0 +1,7 @@
+zibios_wrike:
+    api_url: http://urlApi
+    permanent_tokens:
+        tokens:
+            first: firstToken
+            second: secondToken
+        default_token: first

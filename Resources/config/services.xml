@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="zibios_wrike.api_factory.class">Zibios\Bundle\WrikeBundle\Api\Factory</parameter>
+        <parameter key="zibios_wrike.api.class">Zibios\WrikePhpLibrary\Api</parameter>
+    </parameters>
+
+    <services>
+        <service id="zibios_wrike.api_factory" class="%zibios_wrike.api_factory.class%" />
+        <service id="zibios_wrike.api" class="%zibios_wrike.api.class%">
+            <factory service="zibios_wrike.api_factory" method="create"/>
+        </service>
+    </services>
+</container>

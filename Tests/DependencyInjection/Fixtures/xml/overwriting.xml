@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<srv:container xmlns="http://example.org/schema/dic/zibios_wrike"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:srv="http://symfony.com/schema/dic/services"
+               xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd
+                 http://example.org/schema/dic/zibios_wrike  http://example.org/schema/dic/zibios_wrike-1.0.xsd">
+    <srv:imports>
+        <srv:import resource="base.xml"/>
+    </srv:imports>
+    <config api-url="https://urlOverwritten">
+        <permanent-tokens default-token="third">
+            <token name="third">thirdToken</token>
+        </permanent-tokens>
+    </config>
+</srv:container>

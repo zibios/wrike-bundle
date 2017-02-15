@@ -1,0 +1,31 @@
+{
+    "name": "zibios/wrike-bundle",
+    "description": "Symfony 2|3 bundle for WrikeBundle package.",
+    "keywords": ["symfony", "symfony2", "symfony3", "bundle", "wrike", "wrike.com", "api", "sdk", "library", "guzzle", "client", "REST", "HTTP", "php"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zbigniew Ślązak"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "symfony/dependency-injection": "~2.7|~3.0",
+        "symfony/config": "~2.7|~3.0",
+        "symfony/http-kernel": "~2.7|~3.0",
+
+        "zibios/wrike-php-sdk": "dev-master",
+        "zibios/wrike-php-library": "dev-master",
+        "zibios/wrike-php-guzzle": "dev-master",
+        "zibios/wrike-php-jmsserializer": "dev-master"
+    },
+    "require-dev": {
+        "symfony/yaml": "~2.3|~3.0",
+        "symfony/console": "~2.3|~3.0",
+        "phpunit/phpunit": ">=4.0,<6.0"
+    },
+    "autoload": {
+        "psr-4": {"Zibios\\Bundle\\WrikeBundle\\": ""}
+    }
+}
