@@ -38,3 +38,6 @@ Collection of all badges for WrikeBundle package
 
 **HHVM**
 [![HHVM Status](http://hhvm.h4cc.de/badge/zibios/wrike-bundle.svg)](http://hhvm.h4cc.de/package/zibios/wrike-bundle)
+
+**Coveralls**
+[![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-bundle/badge.svg)](https://coveralls.io/github/zibios/wrike-bundle)
