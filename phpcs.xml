@@ -6,6 +6,6 @@
 
     <rule ref="PSR2" />
 
-    <file>./src</file>
+    <file>./</file>
     <exclude-pattern>./vendor/*</exclude-pattern>
 </ruleset>

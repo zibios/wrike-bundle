@@ -35,3 +35,6 @@ Collection of all badges for WrikeBundle package
 **Code Climate**
 [![Code Climate](https://codeclimate.com/github/zibios/wrike-bundle/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-bundle)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-bundle/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-bundle/coverage)
+
+**HHVM**
+[![HHVM Status](http://hhvm.h4cc.de/badge/zibios/wrike-bundle.svg)](http://hhvm.h4cc.de/package/zibios/wrike-bundle)
