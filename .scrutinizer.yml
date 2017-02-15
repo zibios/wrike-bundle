@@ -77,7 +77,7 @@ tools:
     sensiolabs_security_checker: true
     php_code_coverage: true
     php_cpd:
-        enabled: true
+        enabled: false
         excluded_dirs:        [vendor, Tests, Resources, build]
     php_loc:
         enabled: true
@@ -85,4 +85,4 @@ tools:
     php_pdepend:
         enabled: true
         excluded_dirs:        [vendor, Tests, Resources, build]
-
+build: true
