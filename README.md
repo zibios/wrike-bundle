@@ -22,11 +22,11 @@ Project status
 [![Packagist Version](https://img.shields.io/packagist/v/zibios/wrike-bundle.svg)](https://packagist.org/packages/zibios/wrike-bundle)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-bundle/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/ToDo/mini.png)](https://insight.sensiolabs.com/projects/ToDo)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ToDo)](https://www.codacy.com/app/zibios/wrike-bundle)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/4923a860-32a0-474a-887f-7766d8407b88/mini.png)](https://insight.sensiolabs.com/projects/4923a860-32a0-474a-887f-7766d8407b88)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bddb2d36ac0943618178a65984252b12)](https://www.codacy.com/app/zibios/wrike-bundle)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-bundle/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-bundle/coverage)
 [![Build Status](https://travis-ci.org/zibios/wrike-bundle.svg?branch=master)](https://travis-ci.org/zibios/wrike-bundle)
-[![Dependency Status](https://www.versioneye.com/user/projects/ToDo/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/ToDo)
+[![Libraries.io](https://img.shields.io/librariesio/github/zibios/wrike-bundle.svg)](https://libraries.io/packagist/zibios%2Fwrike-bundle)
 
 [All badges](Resources/doc/Badges.md)
 

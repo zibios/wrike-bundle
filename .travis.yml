@@ -17,6 +17,6 @@ after_script:
   - vendor/bin/test-reporter --coverage-report=build/clover.xml
 addons:
   code_climate:
-    repo_token: ToDo
+    repo_token: 06197a41cf94132d7bacab1a00409cf12b804c6c94dbaba65a8fdb76ad9abe1e
 notifications:
   email: false
