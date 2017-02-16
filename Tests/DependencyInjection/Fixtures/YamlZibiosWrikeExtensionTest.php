@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,13 +16,13 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * YamlZibiosWrikeExtensionTest
+ * YamlZibiosWrikeExtensionTest.
  */
 class YamlZibiosWrikeExtensionTest extends FixtureZibiosWrikeExtensionTestCase
 {
     /**
      * @param ContainerBuilder $container
-     * @param string $fixture
+     * @param string           $fixture
      */
     protected function loadFixture(ContainerBuilder $container, $fixture)
     {

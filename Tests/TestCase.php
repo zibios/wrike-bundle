@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -11,7 +12,7 @@
 namespace Zibios\Bundle\WrikeBundle\Tests;
 
 /**
- * Test Case
+ * Test Case.
  */
 abstract class TestCase extends \PHPUnit_Framework_TestCase
 {

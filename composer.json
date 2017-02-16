@@ -23,7 +23,8 @@
     "require-dev": {
         "symfony/yaml": "~2.3|~3.0",
         "symfony/console": "~2.3|~3.0",
-        "phpunit/phpunit": ">=4.0,<6.0"
+        "phpunit/phpunit": ">=4.0,<6.0",
+        "fabpot/PHP-CS-Fixer": "^2.0"
     },
     "autoload": {
         "psr-4": {"Zibios\\Bundle\\WrikeBundle\\": ""}

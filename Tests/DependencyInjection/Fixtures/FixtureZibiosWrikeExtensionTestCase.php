@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -10,12 +11,12 @@
 
 namespace Zibios\Bundle\WrikeBundle\Tests\DependencyInjection\Fixtures;
 
-use Zibios\Bundle\WrikeBundle\DependencyInjection\ZibiosWrikeExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Zibios\Bundle\WrikeBundle\DependencyInjection\ZibiosWrikeExtension;
 use Zibios\Bundle\WrikeBundle\Tests\TestCase;
 
 /**
- * Fixture ZibiosWrikeExtension Test Case
+ * Fixture ZibiosWrikeExtension Test Case.
  */
 abstract class FixtureZibiosWrikeExtensionTestCase extends TestCase
 {
@@ -89,7 +90,7 @@ abstract class FixtureZibiosWrikeExtensionTestCase extends TestCase
 
     /**
      * @param ContainerBuilder $container
-     * @param string $fixture
+     * @param string           $fixture
      */
     abstract protected function loadFixture(ContainerBuilder $container, $fixture);
 }

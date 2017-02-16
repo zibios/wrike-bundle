@@ -41,3 +41,6 @@ Collection of all badges for WrikeBundle package
 
 **Coveralls**
 [![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-bundle/badge.svg)](https://coveralls.io/github/zibios/wrike-bundle)
+
+**StyleCI**
+[![StyleCI](https://styleci.io/repos/82083702/shield?branch=master)](https://styleci.io/repos/82083702)

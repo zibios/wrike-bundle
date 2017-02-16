@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,7 +16,7 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
- * This class contains the configuration information for the bundle
+ * This class contains the configuration information for the bundle.
  *
  * This information is solely responsible for how the different configuration
  * sections are normalized, and merged.
@@ -34,9 +35,10 @@ class Configuration implements ConfigurationInterface
     /**
      * Generates the configuration tree builder.
      *
-     * @return \Symfony\Component\Config\Definition\Builder\TreeBuilder The tree builder
      * @throws \RuntimeException
      * @throws \InvalidArgumentException
+     *
+     * @return \Symfony\Component\Config\Definition\Builder\TreeBuilder The tree builder
      */
     public function getConfigTreeBuilder()
     {
@@ -87,7 +89,7 @@ class Configuration implements ConfigurationInterface
                 ->arrayNode('permanent_tokens')
                     ->validate()
                         ->ifTrue(function ($v) {
-                            return (
+                            return
                                 array_key_exists('default_token', $v) &&
                                 (
                                     array_key_exists('tokens', $v) === false ||
@@ -95,8 +97,7 @@ class Configuration implements ConfigurationInterface
                                         array_key_exists('tokens', $v) === true &&
                                         array_key_exists($v['default_token'], $v['tokens']) === false
                                     )
-                                )
-                            );
+                                );
                         })
                         ->thenInvalid('Default token not found in tokens array.')
                     ->end()
@@ -115,8 +116,10 @@ class Configuration implements ConfigurationInterface
                                         if (is_string($key) && strlen($key) > 0) {
                                             continue;
                                         }
+
                                         return true;
                                     }
+
                                     return false;
                                 })
                                 ->thenInvalid('The token name should be none empty string.')

@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -10,11 +11,11 @@
 
 namespace Zibios\Bundle\WrikeBundle\Tests\DependencyInjection;
 
-use Zibios\Bundle\WrikeBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\Processor;
+use Zibios\Bundle\WrikeBundle\DependencyInjection\Configuration;
 
 /**
- * ConfigurationTest
+ * ConfigurationTest.
  */
 class ConfigurationTest extends DependencyInjectionTestCase
 {

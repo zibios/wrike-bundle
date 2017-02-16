@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -12,11 +13,11 @@ namespace Zibios\Bundle\WrikeBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Zibios\WrikePhpLibrary\Api;
 
 /**
@@ -27,7 +28,7 @@ class ZibiosWrikeExtension extends Extension
     /**
      * Loads the Wrike configuration.
      *
-     * @param array $configs An array of configuration settings
+     * @param array            $configs   An array of configuration settings
      * @param ContainerBuilder $container A ContainerBuilder instance
      *
      * @throws \Exception
@@ -51,6 +52,18 @@ class ZibiosWrikeExtension extends Extension
     }
 
     /**
+     * Returns the recommended alias to use in XML.
+     *
+     * @throws \BadMethodCallException When the extension name does not follow conventions
+     *
+     * @return string The alias
+     */
+    public function getAlias()
+    {
+        return 'zibios_wrike';
+    }
+
+    /**
      * @param $config
      * @param ContainerBuilder $container
      *
@@ -66,26 +79,16 @@ class ZibiosWrikeExtension extends Extension
                 $serviceId = sprintf('zibios_wrike.app.%s', strtolower($tokenName));
 
                 $definition = new Definition(Api::class);
-                $definition->setFactory([
-                    new Reference('zibios_wrike.api_factory'),
-                    'createForPermanentToken'
-                ]);
+                $definition->setFactory(
+                    [
+                        new Reference('zibios_wrike.api_factory'),
+                        'createForPermanentToken',
+                    ]
+                );
                 $definition->addArgument($tokenCode);
 
                 $container->setDefinition($serviceId, $definition);
             }
         }
-    }
-
-    /**
-     * Returns the recommended alias to use in XML.
-     *
-     * @return string The alias
-     *
-     * @throws \BadMethodCallException When the extension name does not follow conventions
-     */
-    public function getAlias()
-    {
-        return 'zibios_wrike';
     }
 }

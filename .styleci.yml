@@ -1,1 +1,11 @@
 preset: symfony
+
+enabled:
+  - phpdoc_order
+
+finder :
+  name    : [ "*.php", "*.twig" ]
+  exclude : [ "vendor", "var" ]
+
+path    : [ "./" ]
+

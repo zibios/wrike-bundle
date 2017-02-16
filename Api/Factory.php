@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -18,8 +19,11 @@ use Zibios\WrikePhpSdk\ApiFactory;
 class Factory
 {
     /**
-     * @return \Zibios\WrikePhpLibrary\Api
+     * Create Api instance.
+     *
      * @throws \InvalidArgumentException
+     *
+     * @return \Zibios\WrikePhpLibrary\Api
      */
     public static function create()
     {
@@ -27,10 +31,13 @@ class Factory
     }
 
     /**
+     * Create Api instance with access token.
+     *
      * @param string $token
      *
-     * @return \Zibios\WrikePhpLibrary\Api
      * @throws \InvalidArgumentException
+     *
+     * @return \Zibios\WrikePhpLibrary\Api
      */
     public static function createForPermanentToken($token)
     {

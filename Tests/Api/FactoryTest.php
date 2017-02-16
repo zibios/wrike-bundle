@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,7 +16,7 @@ use Zibios\Bundle\WrikeBundle\Tests\TestCase;
 use Zibios\WrikePhpLibrary\Api;
 
 /**
- * FactoryTest
+ * FactoryTest.
  */
 class FactoryTest extends TestCase
 {

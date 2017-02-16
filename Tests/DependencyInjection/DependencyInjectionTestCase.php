@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -12,10 +13,9 @@ namespace Zibios\Bundle\WrikeBundle\Tests\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Zibios\Bundle\WrikeBundle\Tests\TestCase;
-use Zibios\WrikePhpLibrary\Api;
 
 /**
- * DependencyInjectionTestCase
+ * DependencyInjectionTestCase.
  */
 abstract class DependencyInjectionTestCase extends TestCase
 {

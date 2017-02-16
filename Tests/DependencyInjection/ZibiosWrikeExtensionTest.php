@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -16,7 +17,7 @@ use Zibios\Bundle\WrikeBundle\DependencyInjection\ZibiosWrikeExtension;
 use Zibios\WrikePhpLibrary\Api;
 
 /**
- * ZibiosWrikeExtensionTest
+ * ZibiosWrikeExtensionTest.
  */
 class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
 {
@@ -38,7 +39,7 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
         try {
             $container = $this->getContainer(
                 [
-                    $sourceConfig
+                    $sourceConfig,
                 ]
             );
 
@@ -83,8 +84,8 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
                     'firstName' => 'firstToken',
                     'secondName' => 'secondToken',
                     'thirdName' => 'thirdToken',
-                ]
-            ]
+                ],
+            ],
         ];
 
         $container = $this->getContainer([$sourceConfiguration]);

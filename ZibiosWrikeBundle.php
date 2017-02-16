@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikeBundle package.
+
+/*
+ * This file is part of the zibios/wrike-bundle package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -17,5 +18,4 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class ZibiosWrikeBundle extends Bundle
 {
-
 }
