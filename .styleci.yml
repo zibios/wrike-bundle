@@ -2,10 +2,9 @@ preset: symfony
 
 enabled:
   - phpdoc_order
+  - ordered_use
 
 finder :
-  name    : [ "*.php", "*.twig" ]
-  exclude : [ "vendor", "var" ]
-
-path    : [ "./" ]
+  exclude :
+    - vendor
 
