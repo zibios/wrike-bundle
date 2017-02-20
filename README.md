@@ -9,7 +9,7 @@ Installation
 Introduction
 ------------
 
-**This is Symfony Bundle for [Wrike](https://www.wrike.com/) online project management software tools.**
+**This is Symfony Bundle to access REST API for [Wrike](https://www.wrike.com/) online project management software tool.**
 
 For general purpose SDK please check [full configured Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk).
 For none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library).
@@ -38,7 +38,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require <package-name> "~0.0.1"
+$ composer require zibios/wrike-bundle "dev-master"
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -63,7 +63,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new Zibios\Bundle\ZibiosWrikeBundle(),
+            new Zibios\Bundle\WrikeBundle\ZibiosWrikeBundle(),
         );
 
         // ...
