@@ -1,7 +1,6 @@
 Installation
 ============
 
-
 **Proof of Concept - NOT YET USABLE!!!**
 
 **First usable version around 2017-03-01**
@@ -29,7 +28,6 @@ Project status
 [![Libraries.io](https://img.shields.io/librariesio/github/zibios/wrike-bundle.svg)](https://libraries.io/packagist/zibios%2Fwrike-bundle)
 
 [All badges](Resources/doc/Badges.md)
-
 
 Step 1: Download the Bundle
 ---------------------------
@@ -73,17 +71,10 @@ class AppKernel extends Kernel
 }
 ```
 
-
-
 Reference
 ---------
 
 [Generic Wrike PHP Library](https://github.com/zibios/wrike-php-library)
-
-[Response transformer plugin](https://github.com/zibios/wrike-php-jmsserializer) for Wrike PHP Library
-
-[HTTP Client plugin](https://github.com/zibios/wrike-php-guzzle) for Wrike PHP Library
-
 
 Official [Wrike API Documentation](https://developers.wrike.com/documentation/api/overview)
 
