@@ -17,8 +17,7 @@
 
         "zibios/wrike-php-sdk": "dev-master",
         "zibios/wrike-php-library": "dev-master",
-        "zibios/wrike-php-guzzle": "dev-master",
-        "zibios/wrike-php-jmsserializer": "dev-master"
+        "zibios/wrike-php-guzzle": "dev-master"
     },
     "require-dev": {
         "symfony/yaml": "~2.3|~3.0",
