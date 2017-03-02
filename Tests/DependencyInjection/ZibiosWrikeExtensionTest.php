@@ -109,7 +109,6 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
             $serviceId = sprintf('zibios_wrike.app.%s', strtolower($tokenName));
             self::assertTrue($container->hasDefinition($serviceId));
             self::assertInstanceOf(Api::class, $container->get($serviceId));
-            self::assertEquals($tokenCode, $container->get($serviceId)->getBearerToken());
         }
 
         $serviceIds = array_keys($container->getDefinitions());

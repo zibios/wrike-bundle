@@ -41,6 +41,6 @@ class Factory
      */
     public static function createForPermanentToken($token)
     {
-        return ApiFactory::createForBearerToken($token);
+        return ApiFactory::create($token);
     }
 }

@@ -24,7 +24,6 @@ class FactoryTest extends TestCase
     {
         $api = Factory::create();
         self::assertInstanceOf(Api::class, $api);
-        self::assertEquals('', $api->getBearerToken());
     }
 
     public function test_createForPermanentToken()
@@ -32,6 +31,5 @@ class FactoryTest extends TestCase
         $token = 'TestToken';
         $api = Factory::createForPermanentToken($token);
         self::assertInstanceOf(Api::class, $api);
-        self::assertEquals($token, $api->getBearerToken());
     }
 }

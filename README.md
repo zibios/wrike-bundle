@@ -1,9 +1,7 @@
 Installation
 ============
 
-**Proof of Concept - NOT YET USABLE!!!**
-
-**First usable version around 2017-03-01**
+**Alpha version, first usable version around 2017-03-06**
 
 Introduction
 ------------

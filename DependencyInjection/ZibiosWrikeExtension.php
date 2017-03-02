@@ -64,13 +64,13 @@ class ZibiosWrikeExtension extends Extension
     }
 
     /**
-     * @param $config
+     * @param array            $config
      * @param ContainerBuilder $container
      *
      * @throws \Symfony\Component\DependencyInjection\Exception\BadMethodCallException
      * @throws \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
      */
-    protected function addPermanentTokenAppDefinitions($config, ContainerBuilder $container)
+    protected function addPermanentTokenAppDefinitions(array $config, ContainerBuilder $container)
     {
         if (isset($config['permanent_tokens']['tokens']) && is_array($config['permanent_tokens']['tokens'])) {
             /** @var array $tokens */
