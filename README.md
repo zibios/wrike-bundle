@@ -1,14 +1,14 @@
 Installation
 ============
 
-**Alpha version, first usable version around 2017-03-06**
+**Current version: 0.1.0, version 1.0.0 around 2017-04-01**
 
 Introduction
 ------------
 
-**This is Symfony Bundle to access REST API for [Wrike](https://www.wrike.com/) online project management software tool.**
+**This is Symfony Bundle for [Wrike PHP Library](https://github.com/zibios/wrike-php-library).**
 
-For general purpose SDK please check [full configured Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk).
+For general purpose please check [full configured Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk).
 For none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library).
 
 Project status
@@ -69,10 +69,37 @@ class AppKernel extends Kernel
 }
 ```
 
+Step 3: Set configuration
+-------------------------
+```yaml
+zibios_wrike:
+    permanent_tokens:
+        tokens:
+            first: firstToken
+            second: secondToken
+        default_token: first
+```
+
+Step 4: Usage
+-------------------------
+```php
+// @var ApiFactory
+$apiFactory = $this->getContainer()->get('zibios_wrike.api_factory');
+// @var Api
+$apiWithoutAccessToken = $this->getContainer()->get('zibios_wrike.api');
+
+// @var Api
+$firstAppWithAccessToken = $this->getContainer()->get('zibios_wrike.app.first');
+// @var Api
+$secondAppWithAccessToken = $this->getContainer()->get('zibios_wrike.app.second');
+```
+
 Reference
 ---------
 
-[Generic Wrike PHP Library](https://github.com/zibios/wrike-php-library)
+[Wrike PHP Library](https://github.com/zibios/wrike-php-library)
+
+[Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk)
 
 Official [Wrike API Documentation](https://developers.wrike.com/documentation/api/overview)
 
