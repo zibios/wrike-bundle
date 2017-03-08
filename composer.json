@@ -15,10 +15,7 @@
         "symfony/config": "~2.7|~3.0",
         "symfony/http-kernel": "~2.7|~3.0",
 
-        "zibios/wrike-php-sdk": "dev-master",
-        "zibios/wrike-php-library": "dev-master",
-        "zibios/wrike-php-guzzle": "dev-master",
-        "zibios/wrike-php-jmsserializer": "dev-master"
+        "zibios/wrike-php-sdk": "^0.1"
     },
     "require-dev": {
         "symfony/yaml": "~2.3|~3.0",
