@@ -114,6 +114,7 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
 
         $serviceIds = array_keys($container->getDefinitions());
         $expectedServiceIds = [
+            'service_container',
             'zibios_wrike.api_factory',
             'zibios_wrike.api',
             'zibios_wrike.app.firstname',
