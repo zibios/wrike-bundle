@@ -36,11 +36,11 @@ Collection of all badges for WrikeBundle package
 [![Code Climate](https://codeclimate.com/github/zibios/wrike-bundle/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-bundle)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-bundle/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-bundle/coverage)
 
-**HHVM**
-[![HHVM Status](http://hhvm.h4cc.de/badge/zibios/wrike-bundle.svg)](http://hhvm.h4cc.de/package/zibios/wrike-bundle)
-
 **Coveralls**
 [![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-bundle/badge.svg)](https://coveralls.io/github/zibios/wrike-bundle)
 
 **StyleCI**
 [![StyleCI](https://styleci.io/repos/82083702/shield?branch=master)](https://styleci.io/repos/82083702)
+
+**VersionEye**
+[![VersionEye](http://php-eye.com/badge/zibios/wrike-bundle/tested.svg)](http://php-eye.com/package/zibios/wrike-bundle)
