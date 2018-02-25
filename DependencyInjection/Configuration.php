@@ -92,10 +92,10 @@ class Configuration implements ConfigurationInterface
                             return
                                 array_key_exists('default_token', $v) &&
                                 (
-                                    array_key_exists('tokens', $v) === false ||
+                                    false === array_key_exists('tokens', $v) ||
                                     (
-                                        array_key_exists('tokens', $v) === true &&
-                                        array_key_exists($v['default_token'], $v['tokens']) === false
+                                        true === array_key_exists('tokens', $v) &&
+                                        false === array_key_exists($v['default_token'], $v['tokens'])
                                     )
                                 );
                         })

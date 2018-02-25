@@ -36,6 +36,7 @@ class ConfigurationTest extends DependencyInjectionTestCase
         $exceptionClass = '';
         $exceptionMessage = '';
         $calculatedConfig = [];
+
         try {
             $calculatedConfig = $processor->processConfiguration(new Configuration(), [$sourceConfig]);
         } catch (\Exception $e) {
@@ -44,7 +45,7 @@ class ConfigurationTest extends DependencyInjectionTestCase
             $exceptionMessage = $e->getMessage();
         }
 
-        if ($expectedExceptionClass !== false) {
+        if (false !== $expectedExceptionClass) {
             self::assertTrue(
                 $exceptionOccurred,
                 sprintf(
@@ -55,7 +56,7 @@ class ConfigurationTest extends DependencyInjectionTestCase
             );
         }
 
-        if ($expectedExceptionClass === false) {
+        if (false === $expectedExceptionClass) {
             self::assertFalse(
                 $exceptionOccurred,
                 sprintf(

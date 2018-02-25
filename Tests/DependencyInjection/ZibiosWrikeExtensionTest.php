@@ -36,6 +36,7 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
         $exceptionClass = '';
         $exceptionMessage = '';
         $calculatedConfig = [];
+
         try {
             $container = $this->getContainer(
                 [
@@ -50,7 +51,7 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
             $exceptionMessage = $e->getMessage();
         }
 
-        if ($expectedExceptionClass !== false) {
+        if (false !== $expectedExceptionClass) {
             self::assertTrue(
                 $exceptionOccurred,
                 sprintf(
@@ -61,7 +62,7 @@ class ZibiosWrikeExtensionTest extends DependencyInjectionTestCase
             );
         }
 
-        if ($expectedExceptionClass === false) {
+        if (false === $expectedExceptionClass) {
             self::assertFalse(
                 $exceptionOccurred,
                 sprintf(
