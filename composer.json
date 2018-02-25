@@ -15,7 +15,7 @@
         "symfony/config": "~2.7|~3.0",
         "symfony/http-kernel": "~2.7|~3.0",
 
-        "zibios/wrike-php-sdk": "^0.1"
+        "zibios/wrike-php-sdk": "^1.0"
     },
     "require-dev": {
         "symfony/yaml": "~2.3|~3.0",
