@@ -26,7 +26,7 @@ class XmlZibiosWrikeExtensionTest extends FixtureZibiosWrikeExtensionTestCase
      */
     protected function loadFixture(ContainerBuilder $container, $fixture)
     {
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/xml'));
-        $loader->load($fixture.'.xml');
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/xml'));
+        $loader->load($fixture . '.xml');
     }
 }
