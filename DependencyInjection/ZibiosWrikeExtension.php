@@ -45,7 +45,7 @@ class ZibiosWrikeExtension extends Extension
             $container->setParameter(sprintf('zibios_wrike.%s', $key), $value);
         }
 
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.xml');
 
         $this->addPermanentTokenAppDefinitions($config, $container);

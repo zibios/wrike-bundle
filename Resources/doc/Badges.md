@@ -44,3 +44,6 @@ Collection of all badges for WrikeBundle package
 
 **VersionEye**
 [![VersionEye](http://php-eye.com/badge/zibios/wrike-bundle/tested.svg)](http://php-eye.com/package/zibios/wrike-bundle)
+
+**BestPractices**
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1689/badge)](https://bestpractices.coreinfrastructure.org/projects/1689)
