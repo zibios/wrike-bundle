@@ -32,7 +32,7 @@ Project status
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bddb2d36ac0943618178a65984252b12)](https://www.codacy.com/app/zibios/wrike-bundle)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/ba535bca76c554597772/maintainability)](https://codeclimate.com/github/zibios/wrike-bundle/maintainability)
 
-**Branch 'master'**
+**Branch 'v1.x'**
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-bundle/badges/quality-score.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-bundle/?branch=v1.x)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/zibios/wrike-bundle/badges/build.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-bundle/build-status/v1.x)
